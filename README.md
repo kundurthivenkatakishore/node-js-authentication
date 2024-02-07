@@ -12,11 +12,18 @@ Set up MongoDB and configure connection settings in config.js.
 
 Set up Environment Variables
 
-`MONGO_URL= url of mongodb
-PORT= port number
-ACCESS_TOKEN_SECRET= secret of access token`
+    MONGO_URL=mongodb://localhost:27017/userAuth                          #url of mongodb
+    PORT=8000                                                             #port number
+    ACCESS_TOKEN_SECRET=nodejs-authentication-skygoal-assignment          #secret of access token
 
 Run the application using npm start.
+
+### Usage:
+Use /signup to create a new user account.
+
+Use /login to authenticate and obtain a JWT token.
+
+Use the token to access protected routes like /userdetails.
 
 ### Routes:
 ### Signup Route:
@@ -64,11 +71,11 @@ Response: Returns user details such as name, email, age, gender.
 
 ### Dependencies:
 Express: Web application framework for Node.js.
+
 MongoDB: Document database for storing user information.
+
 bcrypt: Hashing library for securely storing passwords.
+
 jsonwebtoken: Library for generating and verifying JSON web tokens for user authentication.
 
-### Usage:
-Use /signup to create a new user account.
-Use /login to authenticate and obtain a JWT token.
-Use the token to access protected routes like /userdetails.
+
