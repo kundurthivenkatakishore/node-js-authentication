@@ -3,11 +3,22 @@
 # Project Overview:
 This Node.js Express application provides a simple user authentication system using MongoDB as the database. It includes routes for user signup, login, and retrieving user details.
 
+# Setup:
+Clone the repository.
+Install dependencies using `npm install`.
+Set up MongoDB and configure connection settings in config.js.
+Set up Environment Variables
+`MONGO_URL= url of mongodb
+PORT= port number
+ACCESS_TOKEN_SECRET= secret of access token`
+Run the application using npm start.
+
 # Routes:
 # Signup Route:
 
 #  Endpoint: /api/auth/signup
-# Description: Allows users to create a new account by providing necessary details such as name, email, age, gender and password.
+# Description: 
+Allows users to create a new account by providing necessary details such as name, email, age, gender and password.
 # Method: POST
 # Parameters:
 name: User's name.
@@ -38,11 +49,7 @@ Express: Web application framework for Node.js.
 MongoDB: Document database for storing user information.
 bcrypt: Hashing library for securely storing passwords.
 jsonwebtoken: Library for generating and verifying JSON web tokens for user authentication.
-# Setup:
-Clone the repository.
-Install dependencies using npm install.
-Set up MongoDB and configure connection settings in config.js.
-Run the application using npm start.
+
 Usage:
 Use /signup to create a new user account.
 Use /login to authenticate and obtain a JWT token.
