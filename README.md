@@ -15,9 +15,8 @@ Run the application using npm start.
 
 # Routes:
 # Signup Route:
-Endpoint: /api/auth/signup
-Description: 
-Allows users to create a new account by providing necessary details such as name, email, age, gender and password.
+Endpoint: /api/auth/signup\n
+Description: Allows users to create a new account by providing necessary details such as name, email, age, gender and password.
 Method: POST
 Parameters:
 name: User's name.
